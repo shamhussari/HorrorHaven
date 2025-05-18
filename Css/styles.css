@@ -1,0 +1,233 @@
+
+/* Body styling */
+body, html {
+    background-color: #1c1c1c !important;
+  }
+body {
+    font-family: serif, sans-serif;
+    background-color: #1c1c1c; 
+    color: #fff; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 
+   Typography
+*/
+
+/* Main titles */
+.navbar-brand {
+    font-family: 'New Rocker', system-ui;
+    color: black;
+    text-shadow: 0 0 8px #8b0000, 0 0 15px #a52a2a; /* burgundy/red glow */
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+h1, h2 {
+    color: rgb(123, 31, 31) !important; 
+    font-size: 2.5rem;
+    font-family: "New Rocker", serif !important;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0.5em;
+    text-shadow: 0 0 6px #5c0d0d !important; 
+}
+
+/* Paragraph text */
+p {
+    font-family: "Lugrasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Utility Title class (used on some pages) */
+.title {
+    color: rgb(123, 31, 31);
+    font-size: 2.5rem;
+    font-family: "New Rocker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #333; /* Dark gray background */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* subtle depth */
+    position: sticky; /* sticky navbar */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Remove default list styling */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Inline list items for horizontal nav */
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Navigation links styling */
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(49, 5, 14);
+    border-radius: 5px;
+    font-family: 'New Rocker', cursive;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #5c0d0d; /* Slightly brighter red */
+    color: #f0f0f0;
+    transform: scale(1.1);
+    outline: none; /* remove default focus outline */
+}
+
+/* Buttons */
+
+.btn {
+    background-color: #461717; /* deep red background */
+    color: white;
+    padding: 10px 20px;
+    border: none; /* clean button */
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'New Rocker', cursive;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover,
+.btn:focus {
+    background-color: #5c0d0d;
+    box-shadow: 0 0 10px #7f1c1c; /* glowing effect */
+    outline: none;
+}
+
+/* Lists */
+
+/* About page list style */
+.about-list {
+    text-align: left;
+    padding-left: 20px;
+    max-width: 600px;
+    margin: 0 auto 2em auto;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+}
+
+/* Footer paragraph styling */
+footer p {
+    margin: 5px 0;
+    color: #f0f0f0;
+}
+
+/* Footer links */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Footer link hover */
+footer a:hover,
+footer a:focus {
+    color: #5c0d0d;
+    outline: none;
+}
+
+/*
+   Responsive Design
+ */
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button,
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    button,
+    input,
+    textarea {
+        font-size: 1rem;
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    button,
+    input,
+    textarea {
+        font-size: 1.1rem;
+    }
+}

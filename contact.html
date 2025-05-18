@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Horror Games & Books Store! Get in touch for spooky inquiries, collaborations, and more.">
+    <meta name="keywords" content="horror, games, books, contact, spooky, thriller, gothic, get in touch">
+    <meta name="author" content="Horror Haven Team">
+
+    <!-- Linking main CSS -->
+    <link rel="stylesheet" href="Css /styles.css">
+    <!-- CSS for contact form -->
+    <link rel="stylesheet" href="Css /contact.css">
+
+    <!-- Fonts for spooky vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lugrasimo&family=New+Rocker&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS CDN added for layout & form enhancement (non-intrusive) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Contact Us | Horror Movies & Games Store</title>
+</head>
+
+<body>
+
+    <!-- Navigation using Bootstrap navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="recom.html">Recommendations</a></li>
+                <li class="nav-item"><a class="nav-link" href="merch.html">Merchandise</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="discussion.html">Discussion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page header section with Bootstrap container -->
+    <header class="container text-center mb-4">
+        <h1>Contact Us</h1>
+        <p>Have a question, suggestion, or just wanna say hi? Fill out this form</p>
+    </header>
+
+    <!-- Contact form enhanced with Bootstrap form classes and grid -->
+    <main class="container">
+        <form id="contactForm" class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Optional" class="form-control">
+            </div>
+
+            <div class="col-12">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-dark">Send</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Script for your JS file for form validation, unchanged -->
+    <script src="JS/script.js"></script>
+
+    <!-- Footer section with Bootstrap container -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></p>
+        <p>&copy; 2025 Horror Movies, Games & Books Store | All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle for any Bootstrap JS components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
