@@ -1,0 +1,172 @@
+/* Body */
+body {
+    font-family: serif, sans-serif;
+    background-color: #1c1c1c;
+    color : #fff !important;
+        background-color: #111;
+        color: #f0f0f0; /* softer white for better readability */
+        font-family: 'Georgia', serif;
+        padding: 20px;
+        line-height: 1.7;
+    }
+    
+    /* title */
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: 'New Rocker', cursive;
+        letter-spacing: 2px;
+        color: #f5c6cb; /* soft pink/red for eerie vibe */
+    }
+    
+    /* main container */
+    .discussion-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #1a1a1a; /* slightly lighter than #111 */
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    /* glow on hover */
+    .discussion-container:hover {
+        box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
+    }
+    
+    /* input and textarea */
+    .comment-box input, 
+    .comment-box textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 12px 0;
+        border: none;
+        border-radius: 6px;
+        background-color: #2a2a2a; /* lighter than #333 */
+        color: #f2f2f2;
+        font-family: 'Georgia', serif;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+    }
+    
+    /* placeholder text lighter gray */
+    .comment-box input::placeholder,
+    .comment-box textarea::placeholder {
+        color: #bbb;
+        opacity: 1;
+    }
+    
+    /* focus effect */
+    .comment-box input:focus, 
+    .comment-box textarea:focus {
+        outline: none;
+        background-color: #3a3a3a;
+        box-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
+    }
+    
+    /* comment button */
+    .comment-box button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #1b1b1b;
+        color: #fdfdfd;
+        border: 2px solid #6c0a14;
+        border-radius: 6px;
+        font-family: 'New Rocker', cursive !important;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    /* button hover */
+    .comment-box button:hover {
+        background: #2b2b2b;
+        color: crimson;
+        transform: scale(1.05);
+        box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+    }
+    
+    /* comment box */
+    .comment {
+        display: block;
+        padding: 15px 20px;
+        background-color: #1a1a1a;
+        color: #f5f5f5;
+        margin-bottom: 15px;
+        border: 2px solid #6c0a14;
+        border-radius: 6px;
+        font-family: 'New Rocker', cursive;
+        transition: all 0.3s ease;
+        word-wrap: break-word;
+    }
+    
+    /* hover effect on comment */
+    .comment:hover {
+        background-color: #252525;
+        color: #f7c2c9;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+    }
+    
+    /* comments section */
+    .comments-section {
+        margin-top: 40px;
+    
+    text-align: center;
+};
+
+/* Center content inside header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Button styling matching Bootstrap's .btn */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(49, 5, 14);
+    border-radius: 5px;
+    font-family: 'New Rocker', cursive !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #5c0d0d; 
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* GIF Section */
+.gif-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* GIF images with dark shadow */
+.gif-section img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .gif-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
